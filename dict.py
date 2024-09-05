@@ -26,3 +26,36 @@ print("\nEx: 4\n")
 dicionario['email'] = 'email@gmail.com'
 dicionario['numero'] = '519999999'
 print(dicionario)
+
+#5. Remova um item do dicionário, como o número de telefone, e imprima o dicionário atualizado.
+print("\nEx: 5\n")
+
+#6. Use um loop para iterar pelos itens do dicionário e imprimir os nomes e idades dos amigos.
+print("\nEx: 6\n")
+
+#7. 
+print("\nEx: 7\n")
+
+#8.  
+print("\nEx: 8\n")
+
+#9. 
+print("\nEx: 9\n")
+
+#10.
+print("\nEx: 10\n")
+
+#11.
+print("\nEx: 11\n")
+
+#12.
+print("\nEx: 12\n")
+
+#13. 
+print("\nEx: 13\n")
+
+#14.
+print("\nEx: 14\n")
+
+#15 
+print("\nEx: 15\n")
