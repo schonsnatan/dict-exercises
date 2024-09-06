@@ -1,1 +1,1 @@
-# fundamentals exercises
+# fundamental exercises
