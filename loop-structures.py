@@ -1,7 +1,5 @@
 '''
-
 https://wiki.python.org.br/EstruturaDeRepeticao
-
 '''
 
 print("\nEx 1:\n")
@@ -52,11 +50,66 @@ while not valid:
         
 print(f'Thank you {name} for the information.')
 
-        
+print("\nEx 4:\n")
 
-print("\nEx 1:\n")
-print("\nEx 1:\n")
-print("\nEx 1:\n")
+a = 80000
+b = 200000
+pc1 = 0.03
+pc2 = 0.015
+count = 0
+
+while a < b:
+    a += a*pc1
+    b += b*pc2
+    count+=1
+    print(f'No ano {count} a: {a:.2f} e b: {b:.2f}')
+    
+print(f"\nIt took {count} years to a: {a:.2f} pass b: {b:.2f}")
+
+print("\nEx 5:\n")
+
+while True:
+    a = int(input('Inform the population of a: '))
+    while a <= 0:
+        print('Inform a population greater than 0.')
+        a = int(input('Inform the population of a: '))
+    b = int(input('Inform the population of b: '))
+    while b <= 0:
+        print('Inform a population greater than 0.')
+        b = int(input('Inform the population of a: '))
+    pc1 = float(input('Inform the growth rate of a: '))
+    while pc1 <= 0:
+        print('Inform valid growth rate.')
+        pc1 = float(input('Inform the growth rate of a: '))
+    pc2 = float(input('Inform the growth rate of b: '))
+    while pc2 <= 0:
+        print('Inform valid growth rate.')
+        pc2 = float(input('Inform the growth rate of b: '))
+    count = 0
+    
+    while a < b:
+        a += a*pc1
+        b += b*pc2
+        count+=1
+        print(f'No ano {count} a: {a:.2f} e b: {b:.2f}')
+        
+    print(f"\nIt took {count} years to a: {a:.2f} pass b: {b:.2f}")
+    check = input('Do you want to continue? Y or N: ')
+    if check=='Y':
+        continue
+    elif check=='N':
+        break
+    else:
+        print('Saindo...')
+
+print("\nEx 6:\n")
+
+for i in range(0,21):
+    print(i)
+
+for i in range(0,21):
+    print(i, end=' ')
+
 print("\nEx 1:\n")
 print("\nEx 1:\n")
 print("\nEx 1:\n")
