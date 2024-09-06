@@ -110,6 +110,51 @@ for i in range(0,21):
 for i in range(0,21):
     print(i, end=' ')
 
-print("\nEx 1:\n")
-print("\nEx 1:\n")
-print("\nEx 1:\n")
+print("\nEx 7:\n")
+
+numbers = input('5 numbers separated by comma: ')
+list_numbers = numbers.split(',')
+
+res = [eval(i) for i in list_numbers]
+print(max(res))
+
+for i in range(0, len(list_numbers)):
+    list_numbers[i] = int(list_numbers[i])
+print(max(res))
+    
+
+print("\nEx 8:\n")
+
+numbers = input('5 numbers separated by comma: ')
+list_numbers = numbers.split(',')
+
+res = [eval(i) for i in list_numbers]
+total = sum(res)
+mean = total/len(res)
+
+print(total)
+print(mean)
+
+print("\nEx 9:\n")
+
+for i in range(50):
+    if i % 2!=0:
+        print(i)
+
+print("\nEx 10 e 11:\n")
+
+count=0
+int1 = int(input('num 1: '))
+int2 = int(input('num 2: '))
+for i in range(int1+1,int2):
+    print(i)
+    count+=i
+print(f'A soma é: {count}')
+
+
+print("\nEx 12:\n")
+
+tabuada = int(input('Numero tabuada: '))
+print(f"Tabuada de {tabuada}")
+for i in range(11):
+    print(f'{tabuada} X {i} = {tabuada*i}')
