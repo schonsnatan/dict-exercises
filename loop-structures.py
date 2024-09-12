@@ -165,7 +165,36 @@ base = int(input('Base: '))
 exp = int(input('Expoente: '))
 
 print(f'Resultado: {base**exp}')
-'''
+
 print("\nEx 14:\n")
 
-num = input('lista de 10 numeros: ')
+num = input('lista de 10 numeros, separados por espaço: ')
+
+num_list = num.split(' ')
+pares = 0
+impares = 0
+
+for i in range(0,len(num_list)):
+    num_list[i] = int(num_list[i])
+    if num_list[i] % 2==0:
+        pares+=1
+    else:
+        impares+=1
+print(f'{impares} números impares')
+print(f'{pares} números pares')
+
+'''
+print("\nEx 15:\n")
+
+fibonacci_num = int(input('Choose a number for fibonacci sequence: '))
+
+def fibonacci(num: int) -> int:
+    if num==1:
+        result=1
+    elif num==2:
+        result=1
+    else:
+        result = fibonacci(num-1)+fibonacci(num-2)
+    return result
+
+print(fibonacci(fibonacci_num))
