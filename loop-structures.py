@@ -183,7 +183,6 @@ for i in range(0,len(num_list)):
 print(f'{impares} números impares')
 print(f'{pares} números pares')
 
-'''
 print("\nEx 15:\n")
 
 fibonacci_num = int(input('Choose a number for fibonacci sequence: '))
@@ -198,3 +197,35 @@ def fibonacci(num: int) -> int:
     return result
 
 print(fibonacci(fibonacci_num))
+'''
+print("\nEx 16:\n")
+
+def fibonacci(num: int) -> int:
+    if num==1:
+        return 0
+    elif num==2:
+        return 1
+    else:
+        return fibonacci(num-1)+fibonacci(num-2)
+    return result
+
+valor = 0 
+i = 1
+
+while valor <= 500:
+    valor = fibonacci(i)
+    if valor > 500:
+        break
+    print(valor)
+    i+=1
+
+#solução otimizada
+def fibonacci():
+    a, b = 0, 1
+    while a <= 500:
+        print(a)
+        a, b = b, a + b
+
+fibonacci()
+
+
