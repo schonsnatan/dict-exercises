@@ -2,6 +2,7 @@
 https://wiki.python.org.br/EstruturaDeRepeticao
 '''
 '''
+
 print("\nEx 1:\n")
 
 grade = int(input('grade between 1 and 10: '))

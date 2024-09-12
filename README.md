@@ -1,1 +1,1 @@
-# dict-exercises
+# fundamental exercises:
