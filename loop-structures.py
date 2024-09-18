@@ -197,7 +197,7 @@ def fibonacci(num: int) -> int:
     return result
 
 print(fibonacci(fibonacci_num))
-'''
+
 print("\nEx 16:\n")
 
 def fibonacci(num: int) -> int:
@@ -226,6 +226,11 @@ def fibonacci():
         print(a)
         a, b = b, a + b
 
-fibonacci()
+fibonacci() #evitamos de usar função recursiva
+
+'''
+print("\nEx 17:\n")
+
+
 
 
